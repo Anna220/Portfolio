@@ -1,0 +1,39 @@
+
+%head{
+    font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  margin: 0 0 35px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+    }
+h1,h2,h3,h4,h5,h6{
+    @extend %head;
+}
+@mixin transition($time,$value){
+    -webkit-transition: #{$value} #{$time}s ease-in-out;
+  -moz-transition: #{$value} #{$time}s ease-in-out;
+  transition: #{$value} #{$time}s ease-in-out;
+}
+@mixin transitionNav{
+    -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+}
+@mixin bgSize{
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+}
+@mixin media($width){
+    @media screen and (max-width:#{$width}){
+        @content;
+    }
+    
+}
+//@mixin mediaTwo($width1,$width2){
+//    @media screen and (min-width:#{$width1} and max-width:#{$width2}){
+//        @content;
+//    }
+//    
+//}

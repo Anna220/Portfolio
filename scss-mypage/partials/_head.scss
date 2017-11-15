@@ -1,0 +1,92 @@
+header{
+ 
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+  text-align: center;
+  color: $primaryColor;
+  background: url('../img/tlo.jpg') no-repeat bottom center scroll;
+  background-color: $secondaryColor;
+  @include bgSize;
+    @include media(768px){
+
+        @include widthHeight(100%,80vh);
+    }
+    h1 {
+        font-size: $font-size +30px;
+        @include media(768px){
+            margin:8em auto;
+            font-size:$font-size - 5;
+        }
+    }
+    p.intro-text {
+        font-size: $font-size - 2px;
+       @include media(768px){
+           text-align:center;
+           font-size: $font-size - 5;
+
+          
+        }
+        
+    }
+    nav{
+        
+        background: $secondaryColor;
+        position: fixed;
+        top:0;
+        @include widthHeight(100%,10vh);
+        z-index: 3;
+        @include media(768px){
+            width:100%;
+        }
+        h2{
+            position: absolute;
+            top:1.5rem;
+            @include media(768px){
+                display:none;
+            }
+        }
+        ul{
+           display:flex;
+            flex-direction: row;
+            justify-content: flex-end;
+             @include media(768px){
+                    display: flex;
+                    flex-wrap: wrap;
+                    
+                 
+                  }
+            li.nav-item{
+                color:$primaryColor;
+                 @include transition(0.3,background);
+                display: inline-block;
+               @include media(768px){
+                   text-align:center;
+                    width:100%;
+                   background:$secondaryColor;
+                  }
+                &:hover {
+       
+        color:$primaryColor;
+        background-color:#42DCA3;
+      }
+      &:active,
+      &:focus {
+    color: $secondaryColor; 
+      }
+            a.nav-link{
+                width:100%;
+                padding:20px;
+                display:block;
+                color: $primaryColor;
+                display:inline-block;
+              &:hover{
+       
+        color:$secondaryColor;
+        background-color:#42DCA3;
+            }
+        }
+    }
+}
+}
+}

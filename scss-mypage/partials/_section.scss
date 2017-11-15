@@ -1,0 +1,154 @@
+section{
+    background:$primaryColor;
+    color:$secondaryColor;
+    @include widthHeight(100%,80vh);
+    font-family: inherit;
+}
+.content-section {
+  padding-top: 100px;
+  padding-bottom: 150px;
+  @include widthHeight(100%,80vh);
+  @include media(768px){
+        
+      margin: 0;
+      padding: 0;
+        } 
+    p,h2,li{
+        
+        text-align: center;
+    }
+    p{
+        padding:10px 345px;
+        margin:10px auto;
+        font-size:13px;
+        @include media(768px){
+        
+      margin: 0 auto;
+      padding: 20px;
+      font-size: $font-size +14;
+            
+        } 
+    }
+    h2{
+        font-size:2rem;
+        @include media(768px){
+            
+      padding: 20px;
+     
+            
+        } 
+    }
+
+    @include media(768px){
+        p{
+            font-size:$font-size - 7px;
+        }
+    }
+}
+.cv-section{
+    color: $primaryColor;
+  background: url('../../img/black-and-white-code-programming-tech-79290.jpeg') no-repeat center/cover;
+  background-color: $secondaryColor;
+    @include bgSize;
+    position: relative;
+    h2,p{
+        margin:-1.7em 0 1rem 0;
+        text-align: center;
+    }
+    .box{
+        @include widthHeight(80%,50vh);
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        @include box;
+        margin:1em auto;
+        
+            .html{
+            @include blocks(cornflowerblue,white);
+            @include widthHeight(90%,8vh);
+            
+        }
+          .jquery{
+            @include blocks(cadetblue,white);
+            @include widthHeight(60%,8vh);
+              
+        }
+          .javascript{
+            @include blocks(firebrick,white);
+            @include widthHeight(80%,8vh);
+       
+        }
+          .git{
+            @include blocks(chocolate,white);
+            @include widthHeight(90%,8vh);
+          
+        }
+         
+    }
+}
+
+
+ul.banner-social-buttons {
+   
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    @include media(768px){
+        
+           display: flex;
+           flex-wrap: wrap;
+            margin:-2em auto;
+        } 
+    li.list-inline-item{
+       @include media(768px){
+        
+           width:50%;
+           margin:.4rem auto;
+        } 
+    }
+    a.btn {
+  font-family: Helvetica, Arial, sans-serif;
+   @include transition(0.3,all);
+  text-transform: uppercase;
+  color: $btn-color;
+  border: 1px solid $btn-color;
+  @include border-radius(3px);
+  background-color: transparent;
+   padding:.5rem 2rem;
+        @include media(768px){
+            display:block;
+             width:50%;
+            margin:0 auto;
+        }
+  &:focus,
+  &:hover {
+    color: black;
+    border: 1px solid $btn-color;
+    outline: none;
+    background-color: $btn-color;
+  }
+}
+  @include media(1199px) {
+    margin-top: 15px;
+  }
+  @include media(767px) {
+      section.content-section{
+          padding: 0;
+          margin: 0;
+      }
+      p{
+          width:100%;
+          font-size:10px;
+          margin: 0;
+          padding: 0;
+      }
+    li.list-inline-item {
+      display:block;
+      padding: 0;
+        width:100%;
+        
+        
+    }
+  }
+}

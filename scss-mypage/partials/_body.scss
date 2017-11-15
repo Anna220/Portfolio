@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+html {
+  width: 100%;
+  height: 100%; }
+body{
+
+    font-size:20px;
+    font-family: $ffamily;
+    color:$primaryColor;
+    background-color: $secondaryColor;
+}
+a {
+  text-decoration: none;
+}

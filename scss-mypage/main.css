@@ -1,0 +1,289 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  margin: 0 0 35px;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-size: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #fff;
+  background-color: #000; }
+
+a {
+  text-decoration: none; }
+
+header {
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+  text-align: center;
+  color: #fff;
+  background: url("../img/tlo.jpg") no-repeat bottom center scroll;
+  background-color: #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media screen and (max-width: 768px) {
+    header {
+      width: 100%;
+      height: 80vh; } }
+  header h1 {
+    font-size: 50px; }
+    @media screen and (max-width: 768px) {
+      header h1 {
+        margin: 8em auto;
+        font-size: 15px; } }
+  header p.intro-text {
+    font-size: 18px; }
+    @media screen and (max-width: 768px) {
+      header p.intro-text {
+        text-align: center;
+        font-size: 15px; } }
+  header nav {
+    background: #000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    z-index: 3; }
+    @media screen and (max-width: 768px) {
+      header nav {
+        width: 100%; } }
+    header nav h2 {
+      position: absolute;
+      top: 1.5rem; }
+      @media screen and (max-width: 768px) {
+        header nav h2 {
+          display: none; } }
+    header nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end; }
+      @media screen and (max-width: 768px) {
+        header nav ul {
+          display: flex;
+          flex-wrap: wrap; } }
+      header nav ul li.nav-item {
+        color: #fff;
+        -webkit-transition: background 0.3s ease-in-out;
+        -moz-transition: background 0.3s ease-in-out;
+        transition: background 0.3s ease-in-out;
+        display: inline-block; }
+        @media screen and (max-width: 768px) {
+          header nav ul li.nav-item {
+            text-align: center;
+            width: 100%;
+            background: #000; } }
+        header nav ul li.nav-item:hover {
+          color: #fff;
+          background-color: #42DCA3; }
+        header nav ul li.nav-item:active, header nav ul li.nav-item:focus {
+          color: #000; }
+        header nav ul li.nav-item a.nav-link {
+          width: 100%;
+          padding: 20px;
+          display: block;
+          color: #fff;
+          display: inline-block; }
+          header nav ul li.nav-item a.nav-link:hover {
+            color: #000;
+            background-color: #42DCA3; }
+
+section {
+  background: #fff;
+  color: #000;
+  width: 100%;
+  height: 80vh;
+  font-family: inherit; }
+
+.content-section {
+  padding-top: 100px;
+  padding-bottom: 150px;
+  width: 100%;
+  height: 80vh; }
+  @media screen and (max-width: 768px) {
+    .content-section {
+      margin: 0;
+      padding: 0; } }
+  .content-section p, .content-section h2, .content-section li {
+    text-align: center; }
+  .content-section p {
+    padding: 10px 345px;
+    margin: 10px auto;
+    font-size: 13px; }
+    @media screen and (max-width: 768px) {
+      .content-section p {
+        margin: 0 auto;
+        padding: 20px;
+        font-size: 34px; } }
+  .content-section h2 {
+    font-size: 2rem; }
+    @media screen and (max-width: 768px) {
+      .content-section h2 {
+        padding: 20px; } }
+  @media screen and (max-width: 768px) {
+    .content-section p {
+      font-size: 13px; } }
+
+.cv-section {
+  color: #fff;
+  background: url("../../img/black-and-white-code-programming-tech-79290.jpeg") no-repeat center/cover;
+  background-color: #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative; }
+  .cv-section h2, .cv-section p {
+    margin: -1.7em 0 1rem 0;
+    text-align: center; }
+  .cv-section .box {
+    width: 80%;
+    height: 50vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-top: 1px transparent;
+    border-right: 1px transparent;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    margin: 1em auto; }
+    .cv-section .box .html {
+      display: inline-block;
+      background: linear-gradient(to right, cornflowerblue 70%, white);
+      position: relative;
+      margin: 0.5em auto;
+      width: 90%;
+      height: 8vh; }
+    .cv-section .box .jquery {
+      display: inline-block;
+      background: linear-gradient(to right, cadetblue 70%, white);
+      position: relative;
+      margin: 0.5em auto;
+      width: 60%;
+      height: 8vh; }
+    .cv-section .box .javascript {
+      display: inline-block;
+      background: linear-gradient(to right, firebrick 70%, white);
+      position: relative;
+      margin: 0.5em auto;
+      width: 80%;
+      height: 8vh; }
+    .cv-section .box .git {
+      display: inline-block;
+      background: linear-gradient(to right, chocolate 70%, white);
+      position: relative;
+      margin: 0.5em auto;
+      width: 90%;
+      height: 8vh; }
+
+ul.banner-social-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  @media screen and (max-width: 768px) {
+    ul.banner-social-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -2em auto; } }
+  @media screen and (max-width: 768px) {
+    ul.banner-social-buttons li.list-inline-item {
+      width: 50%;
+      margin: .4rem auto; } }
+  ul.banner-social-buttons a.btn {
+    font-family: Helvetica, Arial, sans-serif;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    color: #42DCA3;
+    border: 1px solid #42DCA3;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: transparent;
+    padding: .5rem 2rem; }
+    @media screen and (max-width: 768px) {
+      ul.banner-social-buttons a.btn {
+        display: block;
+        width: 50%;
+        margin: 0 auto; } }
+    ul.banner-social-buttons a.btn:focus, ul.banner-social-buttons a.btn:hover {
+      color: black;
+      border: 1px solid #42DCA3;
+      outline: none;
+      background-color: #42DCA3; }
+  @media screen and (max-width: 1199px) {
+    ul.banner-social-buttons {
+      margin-top: 15px; } }
+  @media screen and (max-width: 767px) {
+    ul.banner-social-buttons section.content-section {
+      padding: 0;
+      margin: 0; }
+    ul.banner-social-buttons p {
+      width: 100%;
+      font-size: 10px;
+      margin: 0;
+      padding: 0; }
+    ul.banner-social-buttons li.list-inline-item {
+      display: block;
+      padding: 0;
+      width: 100%; } }
+
+footer {
+  padding: 50px 0;
+  border-top: 1px solid grey;
+  background: #fff;
+  color: #000;
+  margin: 0 auto; }
+  footer p {
+    font-size: 14px;
+    text-align: center; }
